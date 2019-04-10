@@ -13,7 +13,7 @@ It is a website that helps advertise Gums and reisins association(Gara). it is a
 ### Installation, Running  the gara website
 ###### fork the repository and clone it to your computer
 ```
-cd into backend
+cd into Gara
 ```
 
 ###### create virtual enviroment
