@@ -3,16 +3,15 @@ import uuid
 
 # Create your models here.
 
-class new(models.Model):
+class member(models.Model):
     id=models.UUIDField(primary_key=True,default=uuid.uuid4,editable=False)
     title=models.CharField(max_length=25,null=False)
     description=models.TextField(null=False)
-    image=models.ImageField(blank=True,null=True,upload_to='images')
-    createdAt=models.DateTimeField(auto_now=True)
+    person=models.ImageField(blank=True,null=True,upload_to='persons')
 
     def __str__(self):
         return self.title
     class Meta:
-        verbose_name_plural="news"
+        verbose_name_plural="members"
 
 
