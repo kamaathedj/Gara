@@ -1,7 +1,7 @@
 # Gara website
 
 ## Description
-It is a website that helps advertise Gums and reisins association(GARA). it is a group of well organized gum and reisin businesses .
+It is a website that helps advertise Gums and reisins association(Gara). it is a group of well organized gum and reisin businesses .
 ## API Endpoints V1
 
 | **LINKS** | **DESCRIPTION** |
