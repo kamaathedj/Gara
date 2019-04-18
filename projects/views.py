@@ -1,11 +1,13 @@
 from django.shortcuts import render
 from projects.models import project
+from news.views import newses
+from boardmembers.views import boardmember
 
 def projects(request):
     k= project.objects.order_by('-createdAt')
     projects = []
     for projo in k:
-        prog = {
+        data = {
             'id': projo.id,
             'title': projo.title,
             'description': projo.description,
@@ -13,9 +15,17 @@ def projects(request):
             'createdAt':projo.createdAt
             
         }
-        projects.append(prog)
-    context={'projects':projects}
-    print(context)
+        projects.append(data)
+    
+    news=newses()
+    member=boardmember()
+    
+    context={'projects':projects,'news':news,'member':member}
+    
+    
+    
+    
+   
 
     return render(request,'temps/index.html',context)
    
